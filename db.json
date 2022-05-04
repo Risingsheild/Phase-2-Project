@@ -1,0 +1,96 @@
+{
+    "movies" : [
+        {
+            "id": 1,
+            "title":"Joker",
+            "date": 2019,
+            "image":"url",
+            "uni": "DC",
+            "completed": false
+        },
+        {
+            "id": 2,
+            "title":"Birds of Prey",
+            "date": 2020,
+            "image":"url",
+            "uni": "DC",
+            "completed": false
+        },
+        {
+            "id": 3,
+            "title":"Wonder Women",
+            "date": 2020,
+            "image":"url",
+            "uni": "DC",
+            "completed": false
+        },
+        {
+            "id": 4,
+            "title":"Zack Snyder's Justice League",
+            "date": 2021,
+            "image":"url",
+            "uni": "DC",
+            "completed": false
+        },
+        {
+            "id": 5,
+            "title":"Suicide Squad",
+            "date": 2021,
+            "image":"url",
+            "uni": "DC",
+            "completed": false
+        },
+        {
+            "id": 6,
+            "title":"The Batman",
+            "date": 2022,
+            "image":"url",
+            "uni": "DC",
+            "completed": false
+        },
+        {
+            "id": 7,
+            "title":"Dr. Strange in the Multiverse of Madness",
+            "date": 2022,
+            "image":"url",
+            "uni": "Marvel",
+            "completed": false
+        },
+        {
+            "id": 8,
+            "title":"Spider-Man: No Way Home",
+            "date": 2021,
+            "image":"url",
+            "uni": "Marvel",
+            "completed": false
+        },{
+            "id": 9,
+            "title":"The Eternals",
+            "date": 2021,
+            "image":"url",
+            "uni": "Marvel",
+            "completed": false
+        },{
+            "id": 10,
+            "title":"Shangi-Chi and the Ten Rings",
+            "date": 2021,
+            "image":"url",
+            "uni": "Marvel",
+            "completed": false
+        },{
+            "id": 11,
+            "title":"Black Widow",
+            "date": 2021,
+            "image":"url",
+            "uni": "Marvel",
+            "completed": false
+        },{
+            "id": 12,
+            "title":"Spider-Man: Far From Home",
+            "date": 2019,
+            "image":"url",
+            "uni": "Marvel",
+            "completed": false
+        }
+    ]
+}
