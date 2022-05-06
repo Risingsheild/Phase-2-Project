@@ -7,7 +7,7 @@ function MovieCard({movie, onDeleteMovie, onUpdateMovie}) {
             method: "Delete"
         })
         .then((r) => r.json())
-        .then(movie => onDeleteMovie(movie))
+        .then(() => onDeleteMovie(movie))
     }
 
     function handleWatchedClick () {
@@ -29,9 +29,10 @@ function MovieCard({movie, onDeleteMovie, onUpdateMovie}) {
         <li className="card">
             <h4>{movie.title}</h4>
             <img src={movie.image} alt={movie.title} />
+                <p className="year">{movie.year}</p>
             {!movie.watched ?
                 <button className="notWatched" onClick={handleWatchedClick}>Mark as Watched</button>
-                    : <button onClick={handleWatchClick}>You've seen this One!</button>}
+                    : <button onClick={handleWatchedClick}>You've seen this One!</button>}
             <button className="delete" onClick={handleDelete}> Delete </button>
         </li>
     )
