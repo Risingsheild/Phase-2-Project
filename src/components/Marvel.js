@@ -10,6 +10,7 @@ function Marvel({movies, onUpdateMovie, onDeleteMovie}) {
         ))
     return (
         <div className="marvel">
+            <h2>Marvel Movies</h2>
             <ul className="cards">
                 {marvelMovies}
             </ul>

@@ -24,7 +24,7 @@ function MovieForm ({onAddMovie}) {
     }
     
 
-    function handleSubmitForm() {
+    function handleSubmitForm(e) {
         e.preventDefault();
          const movieItem = {
              title: title,
@@ -43,7 +43,9 @@ function MovieForm ({onAddMovie}) {
          .then((newMovie) => onAddMovie(newMovie))
     }
 return (
-    <form className="NewMovie" onSubmit={handleSubmitForm}>
+    <div className="newMovie">
+           <h2>Add Movies Here</h2>
+    <form onSubmit={handleSubmitForm}>
         <label>
             Movie Title:
                 <input 
@@ -87,6 +89,7 @@ return (
         </label>
         <button type="submit">Add Movie</button>
     </form>
+</div>
 )} 
     
 

@@ -9,7 +9,7 @@ function DC({movies, onUpdateMovie, onDeleteMovie}) {
             />
         ))
     return (
-        <div className="marvel">
+        <div className="dc">
             <ul className="cards">
                 {dcMovies}
             </ul>

@@ -1,0 +1,32 @@
+.navBar {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 6;
+    background-color: rgb(201, 239, 202);
+    padding: 10px 30px;
+    height: 30px;
+    vertical-align: middle;
+  }
+  
+.links {
+    text-decoration: none;
+    top: 7px;
+    height: 60px;
+    border: none;
+    border-radius: 0px;
+    height: 40px;
+    padding: 0px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 10px 10px;
+}
+
+.newMovie{
+    grid-area: 3 / 5 / 5 / 6;
+    padding: 50px 0px;
+    width: 100%;
+  }
