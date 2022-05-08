@@ -1,5 +1,9 @@
 function Home(){
-    return <h1>Add Movies Here</h1>
-}  
+    return (
+        <div>
+            <h1>What Movies are we Looking for today?</h1>
+                <p>Add Movies Here</p>
+        </div>
+)}  
     
 export default Home
