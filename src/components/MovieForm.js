@@ -1,15 +1,93 @@
+
 import React, {useState} from "react";
 
-function MovieForm ({onFormSubmit}) {
-    const [formData, setFormData] = useState ({
-        title: "",
-        date: "",
-        image: "",
-        uni: "",
-        completed: false
-    })
+function MovieForm ({onAddMovie}) {
+    const [title, setTitle] = useState("")
+    const [date, setDate] = useState("")
+    const [img, setImg] = useState("")
+    const [uni, setUni] = useState("")
+
+    function handleOnChangeTitle(e) {
+        setTitle(e.target.value)
+    }
+    
+    function handleOnChangeDate(e) {
+        setDate(e.target.value)
+    }
+
+    function handleOnChangeImg(e) {
+        setImg(e.target.value)
+    }
+     
+    function handleOnChangeUni(e) {
+        setUni(e.target.value)
+    }
     
 
-}
+    function handleSubmitForm() {
+        e.preventDefault();
+         const movieItem = {
+             title: title,
+             date: date,
+             "movie-image": img,
+             uni: uni,
+             watched: false,
+         }
+
+         fetch("http://localhost:3000/movies", {
+             method: "POST",
+             headers: {"Content-type": "application/json",},
+             body: JSON.stringify(movieItem)
+         })
+         .then((r) => r.json())
+         .then((newMovie) => onAddMovie(newMovie))
+    }
+return (
+    <form className="NewMovie" onSubmit={handleSubmitForm}>
+        <label>
+            Movie Title:
+                <input 
+                    type="text"
+                    name="title"
+                    placeholder="Enter Movie Title ..."
+                    value={title}
+                    onChange={handleOnChangeTitle}
+                />
+        </label>
+        <label>
+            Release Date:
+                <input
+                    type="text"
+                    name="date"
+                    placeholder="YYYY"
+                    value={date}
+                    onChange={handleOnChangeDate}
+                />
+        </label>
+        <label>
+            Movie Image:
+                <input 
+                    type="text"
+                    name="image"
+                    placeholder="Insert Movie Img URL..."
+                    value={img}
+                    onChange={handleOnChangeImg}
+                />
+        </label>
+        <label>
+            Universe
+                <select
+                    name="universe"
+                    value={uni}
+                    onChange={handleOnChangeUni}
+                >
+                    <option value="dc">DC</option>
+                    <option value="marvel">Marvel</option>
+                </select>
+        </label>
+        <button type="submit">Add Movie</button>
+    </form>
+)} 
+    
 
 export default MovieForm
