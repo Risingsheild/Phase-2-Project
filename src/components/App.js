@@ -15,7 +15,7 @@ function App() {
     useEffect(()=> {
       fetch("http://localhost:3000/movies")
         .then((r) => r.json())
-        .then(movieItem => setMovies(movieItem))
+        .then(data  => setMovies(data))
       }, [])
 
       function addMovie(newMovie) {
@@ -37,10 +37,10 @@ function App() {
         <div>
           <NavBar />
           <Routes>
-              <Route path="/" element={<Home />}/>
-              <Route path="/dc" element={<DC onUpdateMovie={handleAddToWatchList}  onDeleteMovie={deleteMovie}/>}/>
-              <Route path="/marvel" element={<Marvel onUpdateMovie={handleAddToWatchList}  onDeleteMovie={deleteMovie}/>} />
-              <Route path="/watched" element={<Watched onUpdateMovie={handleAddToWatchList}  onDeleteMovie={deleteMovie}/>}/>
+              <Route exact path="/" element={<Home />}/>
+              <Route exact path="/dc" element={<DC onUpdateMovie={handleAddToWatchList}  onDeleteMovie={deleteMovie}/>}/>
+              <Route exact path="/marvel" element={<Marvel onUpdateMovie={handleAddToWatchList}  onDeleteMovie={deleteMovie}/>} />
+              <Route exact path="/watched" element={<Watched onUpdateMovie={handleAddToWatchList}  onDeleteMovie={deleteMovie}/>}/>
           </Routes>
               <MovieForm onAddMovie={addMovie}/>
 

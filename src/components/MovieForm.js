@@ -29,7 +29,7 @@ function MovieForm ({onAddMovie}) {
          const movieItem = {
              title: title,
              date: date,
-             "movie-image": img,
+             "movie-image": "http://www.clipartbest.com/cliparts/dT7/GxM/dT7GxMXT9.jpeg",
              uni: uni,
              watched: false,
          }

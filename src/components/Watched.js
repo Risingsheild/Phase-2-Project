@@ -2,7 +2,7 @@ import MoviContainer from "./MovieContainer";
 
 function Watched({movies, onUpdateMovie}) {
     const displayWatchedMovies = movies
-    .filter((movie) => movie.watched)
+    .filter((movie) => movie.watched === true)
     .map((movie) => <MoviContainer key={movie.id} movie={movie} onUpdateMovie={onUpdateMovie}/>)
 
     return (
