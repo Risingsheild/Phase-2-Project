@@ -40,7 +40,7 @@ function MovieForm ({onAddMovie}) {
              body: JSON.stringify(movieItem)
          })
          .then((r) => r.json())
-         .then((newMovie) => onAddMovie(newMovie))
+         .then((data) => onAddMovie(data))
     }
 return (
     <div className="newMovie">

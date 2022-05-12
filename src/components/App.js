@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {Route, Routes } from "react-router-dom";
 import MovieForm from "./MovieForm";
 import NavBar from "./NavBar";
 import Home from "./Home";
@@ -33,7 +33,6 @@ function App() {
                 setMovies(newMovieList)
       } 
   return (
-    <BrowserRouter>
         <div>
           <NavBar />
           <Routes>
@@ -45,8 +44,6 @@ function App() {
               <MovieForm onAddMovie={addMovie}/>
 
         </div>
-    </BrowserRouter>
-    
   );
 }
 
