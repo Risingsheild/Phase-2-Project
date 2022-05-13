@@ -1,96 +1,100 @@
 {
-    "movies" : [
-        {
-            "id": 1,
-            "title":"Joker",
-            "date": 2019,
-            "image":"https://posterspy.com/wp-content/uploads/2019/09/JOKER-POSTER-2-FINAL-TALENTHOUSE-1200x1776.jpg",
-            "uni": "DC",
-            "watched": false
-        },
-        {
-            "id": 2,
-            "title":"Birds of Prey",
-            "date": 2020,
-            "image":"https://i.redd.it/z3t2cwzm1m341.png",
-            "uni": "DC",
-            "watched": false
-        },
-        {
-            "id": 3,
-            "title":"Wonder Women",
-            "date": 2020,
-            "image":"https://images.hdqwalls.com/download/wonder-woman-1984-movie-poster-4k-5h-1080x1920.jpg",
-            "uni": "DC",
-            "watched": false
-        },
-        {
-            "id": 4,
-            "title":"Zack Snyder's Justice League",
-            "date": 2021,
-            "image":"https://wallpapercave.com/wp/wp8735396.jpg",
-            "uni": "DC",
-            "watched": false
-        },
-        {
-            "id": 5,
-            "title":"Suicide Squad",
-            "date": 2021,
-            "image":"https://media.movieassets.com/static/images/items/movies/posters/460727792599ebe5a1eab26aaa612554.jpg",
-            "uni": "DC",
-            "watched": false
-        },
-        {
-            "id": 6,
-            "title":"The Batman",
-            "date": 2022,
-            "image":"https://caracoltv.brightspotcdn.com/dims4/default/ac37a02/2147483647/strip/true/crop/598x621+0+0/resize/1200x1246!/quality/90/?url=http:%2F%2Fcaracol-brightspot.s3.amazonaws.com%2F35%2F9d%2F8056383443d1b1182ba0d5f08d67%2Fthe-batman.png",
-            "uni": "DC",
-            "watched": false
-        },
-        {
-            "id": 7,
-            "title":"Dr. Strange in the Multiverse of Madness",
-            "date": 2022,
-            "image":"https://posterspy.com/wp-content/uploads/2019/09/Untitled-1dswanda-Recoveredpster-1200x1641.jpg",
-            "uni": "Marvel",
-            "watched": false
-        },
-        {
-            "id": 8,
-            "title":"Spider-Man: No Way Home",
-            "date": 2021,
-            "image":"https://i.etsystatic.com/27032032/r/il/61e05a/2991440652/il_fullxfull.2991440652_ftmd.jpg",
-            "uni": "Marvel",
-            "watched": false
-        },{
-            "id": 9,
-            "title":"The Eternals",
-            "date": 2021,
-            "image":"https://i.etsystatic.com/27032032/r/il/61e05a/2991440652/il_fullxfull.2991440652_ftmd.jpg",
-            "uni": "Marvel",
-            "watched": false
-        },{
-            "id": 10,
-            "title":"Shangi-Chi and the Ten Rings",
-            "date": 2021,
-            "image":"https://wegotthiscovered.com/wp-content/uploads/2021/04/EzVqwiaVoAIAv-E-1.jpg",
-            "uni": "Marvel",
-            "watched": false
-        },{
-            "id": 11,
-            "title":"Black Widow",
-            "date": 2021,
-            "image":"http://www.loucademiadecinema.com.br/wp-content/uploads/2020/04/black-widow-5e667a3ea6e0f.jpg",
-            "uni": "Marvel",
-            "watched": false
-        },{
-            "id": 12,
-            "title":"Spider-Man: Far From Home",
-            "date": 2019,
-            "image":"https://flixer.com/wp-content/uploads/2020/03/4q2NNj4S5dG2RLF9CpXsej7yXl-scaled.jpg",
-            "uni": "Marvel",
-            "watched": false
-        }
-    ]
+  "movies": [
+    {
+      "id": 1,
+      "title": "Joker",
+      "date": 2019,
+      "image": "https://posterspy.com/wp-content/uploads/2019/09/JOKER-POSTER-2-FINAL-TALENTHOUSE-1200x1776.jpg",
+      "uni": "DC",
+      "watched": false
+    },
+    {
+      "id": 2,
+      "title": "Birds of Prey",
+      "date": 2020,
+      "image": "https://i.redd.it/z3t2cwzm1m341.png",
+      "uni": "DC",
+      "watched": false
+    },
+    {
+      "id": 3,
+      "title": "Wonder Women",
+      "date": 2020,
+      "image": "https://images.hdqwalls.com/download/wonder-woman-1984-movie-poster-4k-5h-1080x1920.jpg",
+      "uni": "DC",
+      "watched": false
+    },
+    {
+      "id": 4,
+      "title": "Zack Snyder's Justice League",
+      "date": 2021,
+      "image": "https://wallpapercave.com/wp/wp8735396.jpg",
+      "uni": "DC",
+      "watched": false
+    },
+    {
+      "id": 5,
+      "title": "Suicide Squad",
+      "date": 2021,
+      "image": "https://media.movieassets.com/static/images/items/movies/posters/460727792599ebe5a1eab26aaa612554.jpg",
+      "uni": "DC",
+      "watched": false
+    },
+    {
+      "id": 6,
+      "title": "The Batman",
+      "date": 2022,
+      "image": "https://caracoltv.brightspotcdn.com/dims4/default/ac37a02/2147483647/strip/true/crop/598x621+0+0/resize/1200x1246!/quality/90/?url=http:%2F%2Fcaracol-brightspot.s3.amazonaws.com%2F35%2F9d%2F8056383443d1b1182ba0d5f08d67%2Fthe-batman.png",
+      "uni": "DC",
+      "watched": false
+    },
+    {
+      "id": 7,
+      "title": "Dr. Strange in the Multiverse of Madness",
+      "date": 2022,
+      "image": "https://posterspy.com/wp-content/uploads/2019/09/Untitled-1dswanda-Recoveredpster-1200x1641.jpg",
+      "uni": "Marvel",
+      "watched": false
+    },
+    {
+      "id": 8,
+      "title": "Spider-Man: No Way Home",
+      "date": 2021,
+      "image": "https://i.etsystatic.com/27032032/r/il/61e05a/2991440652/il_fullxfull.2991440652_ftmd.jpg",
+      "uni": "Marvel",
+      "watched": false
+    },
+    {
+      "id": 9,
+      "title": "The Eternals",
+      "date": 2021,
+      "image": "https://i.etsystatic.com/27032032/r/il/61e05a/2991440652/il_fullxfull.2991440652_ftmd.jpg",
+      "uni": "Marvel",
+      "watched": false
+    },
+    {
+      "id": 10,
+      "title": "Shangi-Chi and the Ten Rings",
+      "date": 2021,
+      "image": "https://wegotthiscovered.com/wp-content/uploads/2021/04/EzVqwiaVoAIAv-E-1.jpg",
+      "uni": "Marvel",
+      "watched": false
+    },
+    {
+      "id": 11,
+      "title": "Black Widow",
+      "date": 2021,
+      "image": "http://www.loucademiadecinema.com.br/wp-content/uploads/2020/04/black-widow-5e667a3ea6e0f.jpg",
+      "uni": "Marvel",
+      "watched": false
+    },
+    {
+      "id": 12,
+      "title": "Spider-Man: Far From Home",
+      "date": 2019,
+      "image": "https://flixer.com/wp-content/uploads/2020/03/4q2NNj4S5dG2RLF9CpXsej7yXl-scaled.jpg",
+      "uni": "Marvel",
+      "watched": false
+    }
+  ]
 }

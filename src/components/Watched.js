@@ -3,12 +3,12 @@ import MoviContainer from "./MovieContainer";
 function Watched({movies, onUpdateMovie}) {
     const displayWatchedMovies = movies
     .filter((movie) => movie.watched === true)
-    .map((movie) => <MoviContainer key={movie.id} movie={movie} onUpdateMovie={onUpdateMovie}/>)
+   
 
     return (
         <div className="watched">
             <ul className="cards">
-                {displayWatchedMovies}
+                 <MoviContainer movies={displayWatchedMovies} onUpdateMovie={onUpdateMovie}/>
             </ul>
         </div>
         

@@ -1,17 +1,14 @@
 import MoviContainer from "./MovieContainer"
-
+// filters out each movie thats DC 
 function DC({movies, onUpdateMovie, onDeleteMovie}) {
     const dcMovies = movies.filter((movie) => movie.uni === "DC")
-        .map((movie) => (
-            <MoviContainer 
-            key={movie.id} movie={movie} 
-            onUpdateMovie={onUpdateMovie} onDeleteMovie={onDeleteMovie}
-            />
-        ))
     return (
         <div className="dc">
             <ul className="cards">
-                {dcMovies}
+             <MoviContainer 
+            movies={dcMovies} 
+            onUpdateMovie={onUpdateMovie} onDeleteMovie={onDeleteMovie}
+            />
             </ul>
         </div>
     )

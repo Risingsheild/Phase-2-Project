@@ -55,7 +55,7 @@ return (
                     value={title}
                     onChange={handleOnChangeTitle}
                 />
-        </label>
+        </label> <br/>
         <label>
             Release Date:
                 <input
@@ -65,7 +65,7 @@ return (
                     value={date}
                     onChange={handleOnChangeDate}
                 />
-        </label>
+        </label> <br/>
         <label>
             Movie Image:
                 <input 
@@ -75,7 +75,7 @@ return (
                     value={img}
                     onChange={handleOnChangeImg}
                 />
-        </label>
+        </label> <br/>
         <label>
             Universe
                 <select
@@ -86,7 +86,7 @@ return (
                     <option value="dc">DC</option>
                     <option value="marvel">Marvel</option>
                 </select>
-        </label>
+        </label> <br/>
         <button type="submit">Add Movie</button>
     </form>
 </div>
