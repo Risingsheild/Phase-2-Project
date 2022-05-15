@@ -1,4 +1,5 @@
 # Your DC and Marvel Watchlist #
+![DC/Marvel small](https://static0.srcdn.com/wordpress/wp-content/uploads/2019/03/DC-Marvel-Comics-Failing-Sales.jpg)
 
 ## Introduction ##
 Welcome to your DC and Marvel Watchlist, if your a big fan of the DC and Marvel Universe this app will help keep track of each movie you've seen what movie you'd like to watch next. 
