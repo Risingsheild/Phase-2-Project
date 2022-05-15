@@ -9,6 +9,7 @@ function MoviContainer({movies, onDeleteMovie, onUpdateMovie}) {
                     <MovieCard
                         key={movie.id}
                         movie={movie}
+                        year={movie.year}
                         onUpdateMovie={onUpdateMovie}
                         onDeleteMovie={onDeleteMovie}
                         />    

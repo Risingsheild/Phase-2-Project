@@ -4,9 +4,10 @@ function DC({movies, onUpdateMovie, onDeleteMovie}) {
     const dcMovies = movies.filter((movie) => movie.uni === "DC")
     return (
         <div className="dc">
+            <h2>DC movies</h2>
             <ul className="cards">
              <MoviContainer 
-            movies={dcMovies} 
+            movies={dcMovies} year={dcMovies.year}
             onUpdateMovie={onUpdateMovie} onDeleteMovie={onDeleteMovie}
             />
             </ul>

@@ -2,6 +2,7 @@
 import React, {useState} from "react";
 
 function MovieForm ({onAddMovie}) {
+    const defaultImage = "http://www.clipartbest.com/cliparts/dT7/GxM/dT7GxMXT9.jpeg"
     const [title, setTitle] = useState("")
     const [date, setDate] = useState("")
     const [img, setImg] = useState("")
@@ -29,7 +30,7 @@ function MovieForm ({onAddMovie}) {
          const movieItem = {
              title: title,
              date: date,
-             "movie-image": "http://www.clipartbest.com/cliparts/dT7/GxM/dT7GxMXT9.jpeg",
+             image: defaultImage,
              uni: uni,
              watched: false,
          }
@@ -46,47 +47,45 @@ return (
     <div className="newMovie">
            <h2>Add Movies Here</h2>
     <form onSubmit={handleSubmitForm}>
-        <label>
-            Movie Title:
-                <input 
+        <label>Movie Title:</label>
+            
+                <input className="input"
                     type="text"
                     name="title"
                     placeholder="Enter Movie Title ..."
                     value={title}
                     onChange={handleOnChangeTitle}
                 />
-        </label> <br/>
-        <label>
-            Release Date:
-                <input
+         <br/>
+        <label> Release Date:</label> 
+                <input className="input"
                     type="text"
                     name="date"
                     placeholder="YYYY"
                     value={date}
                     onChange={handleOnChangeDate}
                 />
-        </label> <br/>
-        <label>
-            Movie Image:
-                <input 
+        <br/>
+        <label> Movie Image: </label> 
+                <input className="input"
                     type="text"
                     name="image"
                     placeholder="Insert Movie Img URL..."
                     value={img}
                     onChange={handleOnChangeImg}
                 />
-        </label> <br/>
-        <label>
-            Universe
+        <br/>
+        <label> Universe </label>
                 <select
-                    name="universe"
-                    value={uni}
+                    name="uni"
                     onChange={handleOnChangeUni}
+                    id="select1"
                 >
-                    <option value="dc">DC</option>
-                    <option value="marvel">Marvel</option>
+                    <option value="Select">Select</option>
+                    <option value="DC">DC</option>
+                    <option value="Marvel">Marvel</option>
                 </select>
-        </label> <br/>
+        <br/>
         <button type="submit">Add Movie</button>
     </form>
 </div>

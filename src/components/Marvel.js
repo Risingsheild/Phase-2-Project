@@ -7,7 +7,7 @@ function Marvel({movies, onUpdateMovie, onDeleteMovie}) {
             <h2>Marvel Movies</h2>
             <ul className="cards">
                 <MoviContainer 
-                movies={marvelMovies} 
+                movies={marvelMovies} year={marvelMovies.year}
             onUpdateMovie={onUpdateMovie} onDeleteMovie={onDeleteMovie}
             />
             </ul>

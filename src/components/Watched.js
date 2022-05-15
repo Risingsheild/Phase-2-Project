@@ -7,6 +7,7 @@ function Watched({movies, onUpdateMovie}) {
 
     return (
         <div className="watched">
+            <h2>Your Watched Movies</h2>
             <ul className="cards">
                  <MoviContainer movies={displayWatchedMovies} onUpdateMovie={onUpdateMovie}/>
             </ul>

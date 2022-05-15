@@ -27,9 +27,8 @@ function MovieCard({movie, onDeleteMovie, onUpdateMovie}) {
 
     return (
         <li className="card">
-            <h4>{movie.title}</h4>
+            <h4>{movie.title}, {movie.year}</h4>
             <img src={movie.image} alt={movie.title} />
-                <p className="year">{movie.year}</p>
             {!movie.watched ?
                 <button className="notWatched" onClick={handleWatchedClick}>Mark as Watched</button>
                     : <button onClick={handleWatchedClick}>You've seen this One!</button>}

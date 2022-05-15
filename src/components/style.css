@@ -6,7 +6,7 @@
     justify-content: space-around;
     align-items: center;
     grid-area: 1 / 1 / 2 / 6;
-    background-color: rgb(167, 167, 167);
+    background-color: rgb(204, 204, 204);
     padding: 10px 30px;
     height: 30px;
     vertical-align: middle;
@@ -27,8 +27,93 @@
     
 }
 
-.newMovie{
-    grid-area: 3 / 5 / 5 / 6;
-    padding: 50px 0px;
+.newMovie{  
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 50px 0px;
+  width: 100%;
+  }
+
+.home {
+  background: #aeafa0;
+}
+.dc {
+  background-color: #820505;
+}
+
+.marvel{
+  background-color: rgb(2, 135, 224);
+}
+
+.watched{
+  background-color: #00f54e;
+}
+
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    grid-area: 3 / 1 / 5 / 5;
+  }
+
+  .card {
+    border-radius: 30px;
+    border: 5px solid #000000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 243px;
+    height: auto;
+    padding: 5px 20px;
+    margin: 15px;
+    background-color: #601cc6;
+  }
+  .card:hover {
+    box-shadow: 10px -9px 10px #e7b90c;
+  }
+  button {
+    margin: 5px;
+    background: #e4bcdd;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 2px solid #101110;
+    padding: 3px 6px;
+  }
+
+  button:hover {
+    background: #f5c800;
+  }
+
+  select {
+    box-sizing: border-box;
+    border-radius: 10px;
     width: 100%;
+    max-width: 100px;
+    height: 40px;
+    padding: 10px 10px;
+    margin: 5px 10px;
+    border-color: #000000;
+  }
+
+  .input {
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    width: 100%;
+    max-width: 224px;
+    height: 40px;
+    padding: 10px 10px;
+    margin: 5px 10px;
+    border-color: #000000;
   }
