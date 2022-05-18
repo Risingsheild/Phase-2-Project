@@ -37,11 +37,13 @@ function MovieForm ({onAddMovie}) {
 
          fetch("http://localhost:3000/movies", {
              method: "POST",
-             headers: {"Content-type": "application/json",},
+             headers: {"Content-type": "application/json",
+                    "Accept": "application/json",},
              body: JSON.stringify(movieItem)
          })
          .then((r) => r.json())
-         .then((data) => onAddMovie(data))
+         .then((data) =>  onAddMovie(data))
+         
     }
 return (
     <div className="newMovie">

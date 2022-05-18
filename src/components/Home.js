@@ -1,11 +1,7 @@
 import MovieForm from "./MovieForm"
-import React, {useState} from "react"
+import React from "react"
 
-function Home(){
-    const [movies, setMovies] = useState([])
-    function addMovie(newMovie) {
-        setMovies([...movies, newMovie])
-      }
+function Home({addMovie}){
     return (
         <div className="home">
             <h1>Lets find some movies</h1>
