@@ -4,8 +4,8 @@ import React, {useState} from "react";
 function MovieForm ({onAddMovie}) {
     const defaultImage = "http://www.clipartbest.com/cliparts/dT7/GxM/dT7GxMXT9.jpeg"
     const [title, setTitle] = useState("")
-    const [date, setDate] = useState("")
-    const [img, setImg] = useState("")
+    const [year, setYear] = useState("")
+    const [img, setImg] = useState(defaultImage)
     const [uni, setUni] = useState("")
 
     /*  **Dynamic solution** 
@@ -31,8 +31,8 @@ function MovieForm ({onAddMovie}) {
         setTitle(e.target.value)
     }
     
-    function handleOnChangeDate(e) {
-        setDate(e.target.value)
+    function handleOnChangeYear(e) {
+        setYear(e.target.value)
     }
 
     function handleOnChangeImg(e) {
@@ -48,8 +48,8 @@ function MovieForm ({onAddMovie}) {
         e.preventDefault();
          const movieItem = {
              title: title,
-             date: date,
-             image: defaultImage,
+             year: year,
+             image: img,
              uni: uni,
              watched: false,
          }
@@ -64,7 +64,7 @@ function MovieForm ({onAddMovie}) {
          .then((data) =>  {
             onAddMovie(data)
             setTitle("")
-            setDate("")
+            setYear("")
             setImg("")
             setUni("")
          })
@@ -87,13 +87,13 @@ return (
                     onChange={handleOnChangeTitle}
                 />
          <br/>
-        <label> Release Date:</label> 
+        <label> Release Year:</label> 
                 <input className="input"
                     type="text"
-                    name="date"
+                    name="year"
                     placeholder="YYYY"
-                    value={date}
-                    onChange={handleOnChangeDate}
+                    value={year}
+                    onChange={handleOnChangeYear}
                 />
         <br/>
         <label> Movie Image: </label> 
