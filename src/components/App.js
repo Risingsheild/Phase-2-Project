@@ -28,11 +28,16 @@ function App() {
                 setMovies(newMovieList)
       } 
 
+      function addMovie(newMovie) {
+        setMovies([...movies, newMovie])
+        console.log(newMovie);
+      }
+
   return (
         <div>
           <NavBar />
           <Routes>
-              <Route  path="/" element={<Home />}/> 
+              <Route  path="/" element={<Home onAddMovie={addMovie}/>}/> 
               <Route path="/dc" element={<DC movies={movies} onUpdateMovie={handleAddToWatchList}  onDeleteMovie={deleteMovie} />}/>
               <Route  path="/marvel" element={<Marvel movies={movies} onUpdateMovie={handleAddToWatchList}  onDeleteMovie={deleteMovie}/>} />
               <Route  path="/watched" element={<Watched movies={movies} onUpdateMovie={handleAddToWatchList}  onDeleteMovie={deleteMovie}/>}/>

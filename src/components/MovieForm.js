@@ -8,6 +8,25 @@ function MovieForm ({onAddMovie}) {
     const [img, setImg] = useState("")
     const [uni, setUni] = useState("")
 
+    /*  **Dynamic solution** 
+        const [formData, setFormData] = useState({
+            title: "",
+            year: "",
+            image: defaultImage
+            uni: "",
+        }) 
+
+    function handleChange(e) {
+        setFormData({...formData,
+            [e.target.name]: e.target.value
+        })
+    }
+        ** to use this way make sure name is = to the key in db.json 
+            value will be {formData.(value)}
+            and use {handleChange} for all onChange events
+
+    */
+
     function handleOnChangeTitle(e) {
         setTitle(e.target.value)
     }
@@ -42,7 +61,16 @@ function MovieForm ({onAddMovie}) {
              body: JSON.stringify(movieItem)
          })
          .then((r) => r.json())
-         .then((data) =>  onAddMovie(data))
+         .then((data) =>  {
+            onAddMovie(data)
+            setTitle("")
+            setDate("")
+            setImg("")
+            setUni("")
+         })
+
+
+         console.log(onAddMovie);
          
     }
 return (
